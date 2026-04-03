@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Skills</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="skills.css">
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+<!-- Navbar -->
+<nav class="navbar">
+  <h2 class="logo">Nourhan Mohammed</h2>
+
+  <ul class="nav-links">
+    <li><a href="index.html" class="active">Home</a></li>
+    <li><a href="Skills.html">Skills</a></li>
+    <li><a href="Projects.html">Projects</a></li>
+  </ul>
+</nav>
+
+
+<section class="skills-section">
+
+  <h1 class="title">My Skills</h1>
+
+  <div class="cards-container">
+
+    <!-- Card 1 -->
+    <div class="skill-card">
+      <div class="card-left"><h2>Data Science</h2></div>
+
+      <div class="card-middle">
+        <i class="fas fa-chart-line"></i>
+      </div>
+
+      <div class="card-right">
+        <span class="tool">Python</span>
+        <span class="tool">R</span>
+        <span class="tool">Node.js</span>
+        <span class="tool">Java</span>
+      </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="skill-card">
+      <div class="card-left"><h2>Data Analysis</h2></div>
+
+      <div class="card-middle">
+        <i class="fas fa-chart-pie"></i>
+      </div>
+
+      <div class="card-right">
+        <span class="tool">EDA</span>
+        <span class="tool">Power BI</span>
+        <span class="tool">Matplotlib</span>
+        <span class="tool">Seaborn</span>
+      </div>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="skill-card">
+      <div class="card-left"><h2>Databases</h2></div>
+
+      <div class="card-middle">
+        <i class="fas fa-database"></i>
+      </div>
+
+      <div class="card-right">
+        <span class="tool">SQL</span>
+        <span class="tool">MySQL</span>
+        <span class="tool">SQLite</span>
+        <span class="tool">Firebase</span>
+      </div>
+    </div>
+
+    <!-- Card 4 -->
+    <div class="skill-card">
+      <div class="card-left"><h2>Machine Learning</h2></div>
+
+      <div class="card-middle">
+        <i class="fas fa-brain"></i>
+      </div>
+
+      <div class="card-right">
+        <span class="tool">Supervised</span>
+        <span class="tool">Unsupervised</span>
+        <span class="tool">TensorFlow</span>
+        <span class="tool">Scikit-learn</span>
+      </div>
+    </div>
+
+    <!-- Card 5 -->
+    <div class="skill-card">
+      <div class="card-left"><h2>Mathematics</h2></div>
+
+      <div class="card-middle">
+        <i class="fas fa-square-root-variable"></i>
+      </div>
+
+      <div class="card-right">
+        <span class="tool">Statistics</span>
+        <span class="tool">Probability</span>
+        <span class="tool">Calculus</span>
+      </div>
+    </div>
+
+    <!-- Card 6 -->
+    <div class="skill-card">
+      <div class="card-left"><h2>Soft Skills</h2></div>
+
+      <div class="card-middle">
+        <i class="fas fa-users"></i>
+      </div>
+
+      <div class="card-right">
+        <span class="tool">Teamwork</span>
+        <span class="tool">Problem Solving</span>
+        <span class="tool">Communication</span>
+      </div>
+    </div>
+
+  </div>
+
+</section>
+
+<!-- JS -->
+<script>
+const toggle = document.getElementById("theme-toggle");
+
+toggle.addEventListener("click", () => {
+  document.body.classList.toggle("dark-mode");
+  toggle.textContent =
+    document.body.classList.contains("dark-mode") ? "☀️" : "🌙";
+});
+</script>
+<!-- Contact Section -->
+<section class="contact section">
+
+
+  <div class="socials">
+    <a href="https://www.linkedin.com/in/nour-mohammed-614753278?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BgusIlUYPQgm3rlsbdNnzMg%3D%3D" target="_blank">LinkedIn</a>
+    <a href="mailto:nourhanmohammed1282003@gmail.com">Email</a>
+    <a href="https://github.com/Nourhanmohamed12" target="_blank">GitHub</a>
+  </div>
+</section>
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,208 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #f5f7fa;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 50px;
+  background: linear-gradient(to right, #1f2a44, #2c3e64);
+  color: #fff;
+}
+
+.navbar ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+.navbar a {
+  color: #ccc;
+  text-decoration: none;
+}
+
+.navbar .active {
+  color: #4da3ff;
+  border-bottom: 2px solid #4da3ff;
+}
+
+/* Title */
+.title {
+  text-align: center;
+  font-size: 36px;
+  color: #1f2a44;
+}
+
+.subtitle {
+  text-align: center;
+  color: #777;
+  margin-bottom: 40px;
+}
+
+/* Grid */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  padding: 0 60px 60px;
+}
+
+/* Card */
+.card {
+  background: #fff;
+  border-radius: 20px;
+  overflow: hidden;
+  height: 420px;
+  display: flex;
+  flex-direction: column;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+/* Image */
+.card-img {
+  height: 33%;
+}
+
+.card-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Body */
+.card-body {
+  padding: 15px 18px;
+  height: 67%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Title */
+.card-body h3 {
+  margin: 0;
+  font-weight: bold;
+  color: #000;
+}
+
+/* Description */
+.card-body p {
+  font-size: 14px;
+  color: #555;
+}
+
+/* Tags */
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.tags span {
+  background: #0c0a54; 
+  color: #fff;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+}
+
+/* Button */
+.btn {
+  text-decoration: none;
+  text-align: center;
+  background: #0c0a54;
+  color: #fff;
+  padding: 10px;
+  border-radius: 20px;
+  margin-top: 10px;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #120f82;
+}
+
+/* GitHub */
+.github-link {
+  text-align: center;
+  transform: translateY(-40px); /* يرفع البوتون كامل لفوق */
+  transition: 0.3s;
+}
+
+.github-link a {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 16px;
+  background: #0c0a54;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 20px;
+  font-size: 13px;
+  transition: 0.3s;
+}
+
+.github-link a:hover {
+  background: #120f82;
+}
+
+.github-link img {
+  width: 16px;
+  height: 16px;
+}
+
+/* Contact */
+.socials {
+  margin-top: 5px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  transform: translateY(-10px); /* رفع لفوق */
+}
+
+.socials a {
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  background: #1e293b;
+  color: white;
+  transition: 0.3s;
+}
+
+.socials a:hover {
+  background: #38bdf8;
+  transform: scale(1.1);
+}
+
+.footer-name {
+  margin-top: 10px;
+  color: #94a3b8;
+}
+
+/* Scroll Animation */
+.hidden {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 1s;
+}
+
+.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Scroll Indicator */
+.scroll-indicator {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  animation: fadeIn 2s ease;
+}

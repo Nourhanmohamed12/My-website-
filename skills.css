@@ -1,0 +1,205 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: white;
+  transition: 0.3s;
+  padding-bottom: 80px;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 50px;
+  background: #0f172a;
+  color: white;
+}
+
+.navbar ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Title */
+.title {
+  text-align: center;
+  font-size: 3rem;
+  margin: 40px 0;
+}
+
+/* Grid */
+.cards-container {
+  width: 85%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  justify-items: center;
+}
+
+/* Card */
+.skill-card {
+  width: 100%;
+  max-width: 300px; /* كبرناه */
+  aspect-ratio: 1/1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px; /* كبرناه */
+  border-radius: 20px;
+  transition: 0.4s;
+  cursor: pointer;
+  color: white;
+}
+
+.skill-card:hover {
+  transform: translateY(-10px) scale(1.05);
+}
+
+/* Colors */
+.skill-card:nth-child(1) { background: #138acf; }
+.skill-card:nth-child(2) { background: #c0c033; }
+.skill-card:nth-child(3) { background: #165117; }
+.skill-card:nth-child(4) { background: #17173f; }
+.skill-card:nth-child(5) { background: #2b1e4a; }
+.skill-card:nth-child(6) { background: #761f49; }
+
+/* Title inside card */
+.card-left {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.card-left h2 {
+  font-size: 1.5rem; /* أكبر */
+  margin-bottom: 8px;
+}
+
+/* Icon */
+.card-middle {
+  display: flex;
+  justify-content: center;
+}
+
+.card-middle i {
+  font-size: 40px; /* أكبر */
+  animation: float 3s infinite;
+}
+
+/* Tools */
+.card-right {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 12px;
+}
+
+/* Each Tool */
+.tool {
+  padding: 6px 14px;
+  background: #f1f5f9;
+  color: #111;
+  border-radius: 20px;
+  font-size: 12px;
+  transition: 0.3s;
+}
+
+.tool:hover {
+  background: #e2e8f0;
+  transform: scale(1.05);
+}
+
+.tool::after {
+  content: "•";
+  margin: 0 5px;
+  color: #ddd;
+}
+
+.tool:last-child::after {
+  content: "";
+}
+
+/* Animation */
+@keyframes float {
+  0%,100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+
+/* Dark Mode */
+.dark-mode {
+  background: #0f172a;
+  color: white;
+}
+
+.dark-mode .navbar {
+  background: rgba(15, 23, 42, 0.8);
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .cards-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 500px) {
+  .cards-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Contact */
+.socials {
+  margin-top: 80px; /* مساحة فاضية قبل الـ buttons */
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  transform: translateY(-10px); /* لو عايزة ترفعيهم شوية لفوق زي قبل */
+}
+
+
+.socials a {
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  background: #1e293b;
+  color: white;
+  transition: 0.3s;
+}
+
+.socials a:hover {
+  background: #38bdf8;
+  transform: scale(1.1);
+}
+
+.footer-name {
+  margin-top: 20px;
+  color: #94a3b8;
+}
+
+/* Scroll Animation */
+.hidden {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 1s;
+}
+
+.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Scroll Indicator */
+.scroll-indicator {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
