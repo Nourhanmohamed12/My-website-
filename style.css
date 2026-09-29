@@ -423,12 +423,12 @@ section[id] { scroll-margin-top: 70px; }
 
 .skill-card:hover { transform: translateY(-10px) scale(1.05); }
 
-.skill-card:nth-child(1) { background: #0369a1; }
-.skill-card:nth-child(2) { background: #1d4ed8; }
-.skill-card:nth-child(3) { background: #0f766e; }
+.skill-card:nth-child(1) { background: #1e293b; }
+.skill-card:nth-child(2) { background: #1e293b; }
+.skill-card:nth-child(3) { background: #1e293b; }
 .skill-card:nth-child(4) { background: #1e293b; }
 .skill-card:nth-child(5) { background: #334155; }
-.skill-card:nth-child(6) { background: #0f172a; }
+.skill-card:nth-child(6) { background: #1e293b; }
 
 .card-left { text-align: center; margin-bottom: 10px; }
 .card-left h2 { font-size: 1.5rem; margin-bottom: 8px; }
