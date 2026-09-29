@@ -446,7 +446,7 @@ section[id] { scroll-margin-top: 70px; }
 
 .tool {
   padding: 6px 14px;
-  background: linear-gradient(135deg, #020617, #020617, #0a0f2c, #0f172a);;
+  background: #1e293b;
   color: #e2e8f0;
   border-radius: 20px;
   font-size: 12px;
@@ -463,7 +463,7 @@ section[id] { scroll-margin-top: 70px; }
 
 /* ---------- Projects (from project.css) ---------- */
 .projects {
-  background: linear-gradient(135deg, #020617, #020617, #0a0f2c, #0f172a);;
+  background: #1e293b;
   color:#e2e8f0;
   padding: 90px 0 20px;
 }
@@ -472,7 +472,7 @@ section[id] { scroll-margin-top: 70px; }
 .projects .title {
   text-align: center;
   font-size: 36px;
-  color: #1f2a44;
+  color: #e2e8f0;
   margin: 0 0 10px;
 }
 
@@ -576,4 +576,45 @@ section[id] { scroll-margin-top: 70px; }
   .cards-container { grid-template-columns: 1fr; }
   .socials { flex-wrap: wrap; }
 }
+/* ---------- Profile photo (hero) ---------- */
+.hero {
+  height: auto;
+  min-height: 100vh;
+  padding: 100px 20px 20px;
+}
 
+.profile-photo {
+  position: relative;
+  width: 250px;
+  height: 250px;
+  margin: 0 auto 20px;
+  border-radius: 50%;
+  border: 4px solid #38bdf8;
+  box-shadow: 0 0 30px rgba(56, 189, 248, 0.45);
+  overflow: hidden;
+  background: #1e293b;
+}
+
+.profile-photo img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+}
+
+.profile-initials {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 48px;
+  font-weight: 700;
+  color: #38bdf8;
+}
+
+@media (max-width: 900px) {
+  .profile-photo { width: 140px; height: 140px; }
+}
