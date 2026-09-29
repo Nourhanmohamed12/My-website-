@@ -537,7 +537,7 @@ section[id] { scroll-margin-top: 70px; }
   display: block;
 }
 .projects .card .btn:hover {
-  background: #120f82;
+  background: #1e293b;
   transform: none;
   box-shadow: none;
 }
