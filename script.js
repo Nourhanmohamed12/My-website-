@@ -57,3 +57,19 @@ document.querySelectorAll(".btn").forEach(button => {
     setTimeout(() => circle.remove(), 600);
   });
 });
+
+/* Highlight the current section in the navbar while scrolling */
+const navLinks = document.querySelectorAll(".nav-links a");
+const sections = document.querySelectorAll("section[id]");
+
+const spy = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      navLinks.forEach((link) => {
+        link.classList.toggle("active", link.getAttribute("href") === "#" + entry.target.id);
+      });
+    }
+  });
+}, { rootMargin: "-45% 0px -50% 0px" });
+
+sections.forEach((s) => spy.observe(s));
