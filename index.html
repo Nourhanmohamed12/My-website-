@@ -1,952 +1,416 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
   <title>Nourhan Portfolio</title>
 
   <!-- Google Font -->
-  <link
-    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap"
-    rel="stylesheet"
-  >
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
 
-  <!-- Font Awesome Icons -->
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-  >
+  <!-- Icons (Skills) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-  <!-- CSS -->
   <link rel="stylesheet" href="style.css">
 </head>
 
-
 <body>
 
-<!-- ============================================================
-     NAVBAR
-     ============================================================ -->
-
+<!-- Navbar -->
 <nav class="navbar">
-
   <h2 class="logo">Nourhan Mohammed</h2>
 
   <ul class="nav-links">
-
-    <li>
-      <a href="#home" class="active">Home</a>
-    </li>
-
-    <li>
-      <a href="#about">About</a>
-    </li>
-
-    <li>
-      <a href="#experience">Experience</a>
-    </li>
-
-    <li>
-      <a href="#skills">Skills</a>
-    </li>
-
-    <li>
-      <a href="#projects">Projects</a>
-    </li>
-
-    <li>
-      <a href="#contact">Contact</a>
-    </li>
-
+    <li><a href="#home" class="active">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#contact">Contact</a></li>
   </ul>
-
 </nav>
 
+<!-- Hero -->
 
-<!-- ============================================================
-     HERO SECTION
-     ============================================================ -->
-
+    <!-- Typing Effect -->
+    
 <section class="hero" id="home">
-
   <div class="hero-content">
-
-    <!-- Profile Photo -->
     <div class="profile-photo fade-in">
-
       <span class="profile-initials">NM</span>
-
-      <img
-        src="images/nour.jpeg"
-        alt="Nourhan Mohammed"
-        onerror="this.remove()"
-      >
-
+      <img src="images/nour.jpeg" alt="Nourhan Mohammed" onerror="this.remove()">
     </div>
 
-
-    <!-- Name -->
-    <h1 class="fade-in">
-      Nourhan Mohammed
-    </h1>
-
+    <h1 class="fade-in">Nourhan Mohammed</h1>
 
     <!-- Typing Effect -->
     <h2 class="typing">
-
-      I'm a
-      <span id="typed-text"></span>
-      <span class="cursor">|</span>
-
+      I'm a <span id="typed-text"></span><span class="cursor">|</span>
     </h2>
 
-
-    <!-- Introduction -->
     <p class="fade-in delay">
-
-      I'm a Data Engineer passionate about building reliable data
-      foundations for AI and analytics. I specialize in Python, SQL,
-      and database design, turning raw data into clean, well-structured
-      datasets. I enjoy building data pipelines and end-to-end
-      applications that make data ready for real-world decisions.
-
+    I'm a Data Engineer passionate about building reliable data foundations for AI and analytics.
+    I specialize in Python, SQL, and database design, turning raw data into clean, well-structured datasets.
+    I enjoy building data pipelines and end-to-end applications that make data ready for real-world decisions.
     </p>
 
-
-    <!-- Buttons -->
     <div class="buttons fade-in delay2">
+  <a href="#projects" class="btn primary">View My Work →</a>
 
-      <a
-        href="#projects"
-        class="btn primary"
-      >
-        View My Work →
-      </a>
-
-
-      <a
-        href="https://drive.google.com/file/d/10iT1-ZYjP4DF8wKiby_Rd-OLEwiFCWt2/view?usp=sharing"
-        download
-        class="btn secondary"
-      >
-        Download CV
-      </a>
-
-
-      <a
-        href="https://mail.google.com/mail/?view=cm&to=nourhanmohammed1282003@gmail.com"
-        class="btn secondary"
-      >
-        Get In Touch ✉
-      </a>
-
-    </div>
-
+  <a href="https://drive.google.com/file/d/10iT1-ZYjP4DF8wKiby_Rd-OLEwiFCWt2/view?usp=sharing" download class="btn secondary">
+    Download CV
+  </a>
+  <a href="https://mail.google.com/mail/?view=cm&to=nourhanmohammed1282003@gmail.com" class="btn secondary">
+  Get In Touch ✉</a>
+</div>
+  
   </div>
-
 </section>
-
-
-<!-- Scroll Indicator -->
-
 <div class="scroll-indicator">
-
   <span class="mouse">
     <span class="wheel"></span>
   </span>
-
   <p>Scroll Down</p>
-
 </div>
-
-
-
-<!-- ============================================================
-     ABOUT SECTION
-     ============================================================ -->
-
+<!-- About Section -->
 <section class="about section" id="about">
-
-  <h2 class="section-title">
-    About Me
-  </h2>
-
-
+  <h2 class="section-title">About Me</h2>
   <p class="section-text">
 
-    B.Sc. in Data Science (GPA: 3.61/4.0) with a strong foundation
-    in Python, SQL, and statistics, now focused on data engineering.
-    Skilled in database design with MySQL, SQLite, and Firebase,
-    data cleaning and preparation, and building end-to-end
-    data-driven applications.
+    B.Sc. in Data Science (GPA: 3.61/4.0) with a strong foundation in Python, SQL, and statistics, now focused on data engineering. Skilled in database design with MySQL, SQLite, and Firebase, data cleaning and preparation, and building end-to-end data-driven applications.
 
-    <br><br>
+    Built the backend for an Intelligent Tourism App using Node.js, MySQL, and Firebase, and designed its data flow to power image recognition (92% accuracy) and personalized recommendations.
 
-    Built the backend for an Intelligent Tourism App using Node.js,
-    MySQL, and Firebase, and designed its data flow to power image
-    recognition (92% accuracy) and personalized recommendations.
-
-    <br><br>
-
-    Experienced in preparing and processing large datasets (50k+
-    records) with SAS Viya, including cleaning, feature engineering,
-    and model deployment. Previously managed 1,200+ patient records
-    with 100% data accuracy, and taught Python and Data Analysis
-    to 100+ students.
-
+    Experienced in preparing and processing large datasets (50k+ records) with SAS Viya, including cleaning, feature engineering, and model deployment. Previously managed 1,200+ patient records with 100% data accuracy, and taught Python and Data Analysis to 100+ students.
+    
   </p>
-
 </section>
 
-
-
-<!-- ============================================================
-     EXPERIENCE SECTION
-     ============================================================ -->
-
+<!-- Experience Section -->
 <section class="experience section" id="experience">
+  <h2 class="section-title">Experience</h2>
 
-  <h2 class="section-title">
-    Experience
-  </h2>
+  <div class="timeline">
 
-
-  <div class="experience-cards">
-
-
-    <!-- ========================================================
-         EXPERIENCE CARD 1
-         ======================================================== -->
-
-    <div class="experience-card hidden">
-
-      <div class="experience-content">
-
-        <h3>
-          Programming Instructor & Project-Based Tutor
-        </h3>
-
-        <h4>
-          iSchool
-        </h4>
-
-        <ul>
-
-          <li>
-            Delivered Machine Learning fundamentals to Grade 6
-            students through the DEMI project, simplifying complex
-            concepts for young learners.
-          </li>
-
-          <li>
-            Taught Computer Fundamentals to teenage students
-            (ages 15–18) through the DECI project, focusing on
-            practical understanding.
-          </li>
-
-          <li>
-            Contributed to summer training programs by designing
-            age-appropriate technical content.
-          </li>
-
-        </ul>
-
+    <!-- Card 1 -->
+    <div class="exp-card hidden">
+      <div class="exp-content">
+        <h3>Programming Instructor & Project based Tutor, iSchool</h3>
+        <p>
+      - Delivered ML fundamentals to Grade 6 students through the DEMI project, simplifying complex concepts for young learners<br>
+      - Taught Computer Fundamentals to teenage students (ages 15–18) through the DECI project, focusing on practical understanding<br>
+      - Contributed to summer training programs, designing age-appropriate technical content</p>
       </div>
+      <span class="exp-date">5/2026 – Present</span>
+    </div>
+    <!-- Card 2 -->
+    <div class="exp-card hidden">
+      <div class="exp-content">
+        <h3>Data Science instructor,Black Horse Academy</h3>
+        <p>
+-Taught 100+ students Python, Data Analysis, Machine Learning
 
-
-      <span class="experience-date">
-        05/2026 – Present
-      </span>
-
+- Mentored 10+ projects improving problem-solving skills</p>
+      </div>
+      <span class="exp-date">11/2025 – Present</span>
     </div>
 
+    <!-- Card 3 -->
+    <div class="exp-card hidden">
+      <div class="exp-content">
+        <h3>Software Engineer,Genio Tech Academy</h3>
+        <p>
+-Delivered Python, Java, Robotics, ML courses
 
-
-    <!-- ========================================================
-         EXPERIENCE CARD 2
-         ======================================================== -->
-
-    <div class="experience-card hidden">
-
-      <div class="experience-content">
-
-        <h3>
-          Data Science Instructor
-        </h3>
-
-        <h4>
-          Black Horse Academy
-        </h4>
-
-        <ul>
-
-          <li>
-            Taught Python, Data Analysis, and Machine Learning
-            to 100+ students.
-          </li>
-
-          <li>
-            Mentored 10+ student projects, helping students improve
-            their technical and problem-solving skills.
-          </li>
-
-        </ul>
-
+- Guided student projects and competitions</p>
       </div>
-
-
-      <span class="experience-date">
-        11/2025 – Present
-      </span>
-
+      <span class="exp-date">06/2024 – 03/2026</span>
     </div>
 
-
-
-    <!-- ========================================================
-         EXPERIENCE CARD 3
-         ======================================================== -->
-
-    <div class="experience-card hidden">
-
-      <div class="experience-content">
-
-        <h3>
-          Software Engineer
-        </h3>
-
-        <h4>
-          Genio Tech Academy
-        </h4>
-
-        <ul>
-
-          <li>
-            Delivered courses in Python, Java, Robotics,
-            and Machine Learning.
-          </li>
-
-          <li>
-            Guided students through technical projects
-            and competitions.
-          </li>
-
-        </ul>
-
+    <!-- Card 4 -->
+    <div class="exp-card hidden">
+      <div class="exp-content">
+        <h3>Data Entry Specialist, Al-Asafra Charity Hospital</h3>
+        <p>
+Managed 1,200+ patient records with 100% data accuracy, ensuring smooth hospital operations.</p>
       </div>
-
-
-      <span class="experience-date">
-        06/2024 – 03/2026
-      </span>
-
+      <span class="exp-date">06/2023 – 01/2024</span>
     </div>
 
-
-
-    <!-- ========================================================
-         EXPERIENCE CARD 4
-         ======================================================== -->
-
-    <div class="experience-card hidden">
-
-      <div class="experience-content">
-
-        <h3>
-          Data Entry Specialist
-        </h3>
-
-        <h4>
-          Al-Asafra Charity Hospital
-        </h4>
-
-        <ul>
-
-          <li>
-            Managed 1,200+ patient records with 100% data accuracy,
-            ensuring smooth hospital operations.
-          </li>
-
-        </ul>
-
+    <!-- Card 5 -->
+    <div class="exp-card hidden">
+      <div class="exp-content">
+        <h3>Machine Learning Using SAS Viya Trainee</h3>
+        <p>
+Preprocessed 50k+ records, engineered features, and deployed ML models achieving 92% prediction accuracy.</p>
       </div>
-
-
-      <span class="experience-date">
-        06/2023 – 01/2024
-      </span>
-
+      <span class="exp-date">07/2023 – 08/2023</span>
     </div>
-
-
-
-    <!-- ========================================================
-         EXPERIENCE CARD 5
-         ======================================================== -->
-
-    <div class="experience-card hidden">
-
-      <div class="experience-content">
-
-        <h3>
-          Machine Learning Using SAS Viya Trainee
-        </h3>
-
-        <h4>
-          SAS Viya Training Program
-        </h4>
-
-        <ul>
-
-          <li>
-            Preprocessed 50k+ records and performed
-            feature engineering.
-          </li>
-
-          <li>
-            Built and deployed Machine Learning models
-            achieving 92% prediction accuracy.
-          </li>
-
-        </ul>
-
-      </div>
-
-
-      <span class="experience-date">
-        07/2023 – 08/2023
-      </span>
-
-    </div>
-
 
   </div>
-
 </section>
 
-
-
-<!-- ============================================================
-     SKILLS SECTION
-     ============================================================ -->
-
+<!-- Skills Section -->
 <section class="skills-section" id="skills">
 
-  <h1 class="title">
-    My Skills
-  </h1>
-
+  <h1 class="title">My Skills</h1>
 
   <div class="cards-container">
 
-
-    <!-- Skill Card 1 -->
-
+    <!-- Card 1 -->
     <div class="skill-card">
-
-      <div class="card-left">
-        <h2>Data Science</h2>
-      </div>
+      <div class="card-left"><h2>Data Science</h2></div>
 
       <div class="card-middle">
         <i class="fas fa-chart-line"></i>
       </div>
 
       <div class="card-right">
-
         <span class="tool">Python</span>
         <span class="tool">R</span>
         <span class="tool">Node.js</span>
         <span class="tool">Java</span>
-
       </div>
-
     </div>
 
-
-
-    <!-- Skill Card 2 -->
-
+    <!-- Card 2 -->
     <div class="skill-card">
-
-      <div class="card-left">
-        <h2>Data Analysis</h2>
-      </div>
+      <div class="card-left"><h2>Data Analysis</h2></div>
 
       <div class="card-middle">
         <i class="fas fa-chart-pie"></i>
       </div>
 
       <div class="card-right">
-
         <span class="tool">EDA</span>
         <span class="tool">Power BI</span>
         <span class="tool">Matplotlib</span>
         <span class="tool">Seaborn</span>
-
       </div>
-
     </div>
 
-
-
-    <!-- Skill Card 3 -->
-
+    <!-- Card 3 -->
     <div class="skill-card">
-
-      <div class="card-left">
-        <h2>Databases</h2>
-      </div>
+      <div class="card-left"><h2>Databases</h2></div>
 
       <div class="card-middle">
         <i class="fas fa-database"></i>
       </div>
 
       <div class="card-right">
-
         <span class="tool">SQL</span>
         <span class="tool">MySQL</span>
         <span class="tool">SQLite</span>
         <span class="tool">Firebase</span>
-
       </div>
-
     </div>
 
-
-
-    <!-- Skill Card 4 -->
-
+    <!-- Card 4 -->
     <div class="skill-card">
-
-      <div class="card-left">
-        <h2>Machine Learning</h2>
-      </div>
+      <div class="card-left"><h2>Machine Learning</h2></div>
 
       <div class="card-middle">
         <i class="fas fa-brain"></i>
       </div>
 
       <div class="card-right">
-
         <span class="tool">Supervised</span>
         <span class="tool">Unsupervised</span>
         <span class="tool">TensorFlow</span>
         <span class="tool">Scikit-learn</span>
-
       </div>
-
     </div>
 
-
-
-    <!-- Skill Card 5 -->
-
+    <!-- Card 5 -->
     <div class="skill-card">
-
-      <div class="card-left">
-        <h2>Mathematics</h2>
-      </div>
+      <div class="card-left"><h2>Mathematics</h2></div>
 
       <div class="card-middle">
         <i class="fas fa-square-root-variable"></i>
       </div>
 
       <div class="card-right">
-
         <span class="tool">Statistics</span>
         <span class="tool">Probability</span>
         <span class="tool">Calculus</span>
-
       </div>
-
     </div>
 
-
-
-    <!-- Skill Card 6 -->
-
+    <!-- Card 6 -->
     <div class="skill-card">
-
-      <div class="card-left">
-        <h2>Soft Skills</h2>
-      </div>
+      <div class="card-left"><h2>Soft Skills</h2></div>
 
       <div class="card-middle">
         <i class="fas fa-users"></i>
       </div>
 
       <div class="card-right">
-
         <span class="tool">Teamwork</span>
         <span class="tool">Problem Solving</span>
         <span class="tool">Communication</span>
-
       </div>
-
     </div>
-
 
   </div>
 
 </section>
 
-
-
-<!-- ============================================================
-     PROJECTS SECTION
-     ============================================================ -->
-
+<!-- Projects Section -->
 <section class="projects" id="projects">
 
-  <h1 class="title">
-    My Projects
-  </h1>
-
-  <p class="subtitle">
-    A collection of my recent work and accomplishments
-  </p>
-
+  <h1 class="title">My Projects</h1>
+  <p class="subtitle">A collection of my recent work and accomplishments</p>
 
   <div class="cards">
 
-
-    <!-- Project 1 -->
-
+    <!-- Card -->
     <div class="card">
-
       <div class="card-img">
-
-        <img
-          src="images/Which-Is-The-largest-Egyptian-Pyramid.jpg"
-          alt="Triplens Tourism"
-        >
-
+        <img src="images/Which-Is-The-largest-Egyptian-Pyramid.jpg">
       </div>
-
 
       <div class="card-body">
-
-        <h3>
-          Triplens Tourism
-        </h3>
-
-        <p>
-          AI-powered tourism app using computer vision
-          and personalized recommendations.
-        </p>
-
+        <h3>Triplens Tourism</h3>
+        <p>AI-powered tourism app using computer vision and personalized recommendations.</p>
 
         <div class="tags">
-
-          <span>📱 Flutter</span>
-          <span>⚡ Node.js</span>
-          <span>🌐 Express.js</span>
-          <span>🗄️ MySQL</span>
-          <span>🔐 Firebase</span>
-          <span>🖼️ Computer Vision</span>
-          <span>❤️ Recommendations</span>
-
+          <span>📱Flutter</span>
+            <span>⚡Node.js</span>
+            <span>🌐Express.js</span>
+            <span>🗄️ MySQL</span>
+            <span>🔐Firebase </span>
+            <span>🖼️ Computer Vision</span>
+            <span>❤️Recommendations </span>
         </div>
 
-
-        <a
-          href="https://github.com/Nourhanmohamed12"
-          target="_blank"
-          class="btn"
-        >
+        <a href="https://github.com/Nourhanmohamed12" target="_blank" class="btn">
           View Code
         </a>
-
       </div>
-
     </div>
 
 
-
-    <!-- Project 2 -->
-
+    <!-- Card -->
     <div class="card">
-
       <div class="card-img">
-
-        <img
-          src="images/OIP.webp"
-          alt="Hospital Management System"
-        >
-
+        <img src="images/OIP.webp">
       </div>
 
-
       <div class="card-body">
-
-        <h3>
-          Hospital Management System
-        </h3>
-
-        <p>
-          Desktop system to manage patients, doctors,
-          billing, and hospital operations.
-        </p>
-
+        <h3>Hospital Management System</h3>
+        <p>Desktop system to manage patients, doctors, billing, and hospital operations.</p>
 
         <div class="tags">
+          <span>🐍 Python 3.x </span>
+            <span>🖥️ Tkinter</span>
+            <span>🗄️ SQLite3</span>
+            <span>📦 Pillow (PIL)</span>
+            <span>📊 sqlite3</span>
+        </div>
 
+        <a href="https://github.com/Nourhanmohamed12" target="_blank" class="btn">
+          View Code
+        </a>
+      </div>
+    </div>
+
+    <!-- Card -->
+    <div class="card">
+      <div class="card-img">
+        <img src="images/f52e7b_c15f481be21349cbae6e2cbeb64a10ce~mv2.jpg">
+      </div>
+
+      <div class="card-body">
+        <h3>Enterprise Network Simulation</h3>
+        <p>Simulation of enterprise network with routing protocols, NAT, and security.</p>
+
+        <div class="tags">
+           <span>🌐 Cisco Packet Tracer</span>
+            <span>📡 OSPF</span>
+            <span>⚡ EIGRP</span>
+            <span>🔁 RIP</span>
+            <span>🌍 DNS</span>
+            <span>🔐 Port Security</span>
+            <span>🔄 NAT/PAT</span>
+        </div>
+
+        <a href="https://github.com/Nourhanmohamed12" target="_blank" class="btn">
+          View Code
+        </a>
+      </div>
+    </div>
+
+
+    <!-- Card -->
+    <div class="card">
+      <div class="card-img">
+        <img src="images/5Lp743vn9uRuJdSjUMAYd.jpg">
+      </div>
+
+      <div class="card-body">
+        <h3>Walmart Sales Analysis</h3>
+        <p>Data analysis project exploring trends, seasonal effects, and sales insights.</p>
+
+        <div class="tags">
           <span>🐍 Python 3.x</span>
-          <span>🖥️ Tkinter</span>
-          <span>🗄️ SQLite3</span>
-          <span>📦 Pillow (PIL)</span>
-          <span>📊 sqlite3</span>
-
+            <span>📊 Pandas</span>
+            <span>📈 Matplotlib</span>
+            <span>📉 Seaborn</span>
+            <span>🔢 NumPy</span>
+            <span>📱 Jupyter Notebook</span>
         </div>
 
-
-        <a
-          href="https://github.com/Nourhanmohamed12"
-          target="_blank"
-          class="btn"
-        >
+        <a href="https://github.com/Nourhanmohamed12" target="_blank" class="btn">
           View Code
         </a>
-
       </div>
-
     </div>
 
-
-
-    <!-- Project 3 -->
-
+    <!-- Card -->
     <div class="card">
-
       <div class="card-img">
-
-        <img
-          src="images/f52e7b_c15f481be21349cbae6e2cbeb64a10ce~mv2.jpg"
-          alt="Enterprise Network Simulation"
-        >
-
+        <img src="images/4e009bb7-679e-4ac2-92b8-e55b73a67b11-cover.png">
       </div>
-
 
       <div class="card-body">
-
-        <h3>
-          Enterprise Network Simulation
-        </h3>
-
-        <p>
-          Simulation of enterprise network with routing
-          protocols, NAT, and security.
-        </p>
-
+        <h3>Offline TODO App</h3>
+        <p>Simple mobile app to manage tasks offline with smooth user experience.</p>
 
         <div class="tags">
-
-          <span>🌐 Cisco Packet Tracer</span>
-          <span>📡 OSPF</span>
-          <span>⚡ EIGRP</span>
-          <span>🔁 RIP</span>
-          <span>🌍 DNS</span>
-          <span>🔐 Port Security</span>
-          <span>🔄 NAT/PAT</span>
-
-        </div>
-
-
-        <a
-          href="https://github.com/Nourhanmohamed12"
-          target="_blank"
-          class="btn"
-        >
-          View Code
-        </a>
-
-      </div>
-
-    </div>
-
-
-
-    <!-- Project 4 -->
-
-    <div class="card">
-
-      <div class="card-img">
-
-        <img
-          src="images/5Lp743vn9uRuJdSjUMAYd.jpg"
-          alt="Walmart Sales Analysis"
-        >
-
-      </div>
-
-
-      <div class="card-body">
-
-        <h3>
-          Walmart Sales Analysis
-        </h3>
-
-        <p>
-          Data analysis project exploring trends,
-          seasonal effects, and sales insights.
-        </p>
-
-
-        <div class="tags">
-
-          <span>🐍 Python 3.x</span>
-          <span>📊 Pandas</span>
-          <span>📈 Matplotlib</span>
-          <span>📉 Seaborn</span>
-          <span>🔢 NumPy</span>
-          <span>📱 Jupyter Notebook</span>
-
-        </div>
-
-
-        <a
-          href="https://github.com/Nourhanmohamed12"
-          target="_blank"
-          class="btn"
-        >
-          View Code
-        </a>
-
-      </div>
-
-    </div>
-
-
-
-    <!-- Project 5 -->
-
-    <div class="card">
-
-      <div class="card-img">
-
-        <img
-          src="images/4e009bb7-679e-4ac2-92b8-e55b73a67b11-cover.png"
-          alt="Offline TODO App"
-        >
-
-      </div>
-
-
-      <div class="card-body">
-
-        <h3>
-          Offline TODO App
-        </h3>
-
-        <p>
-          Simple mobile app to manage tasks offline
-          with smooth user experience.
-        </p>
-
-
-        <div class="tags">
-
           <span>📱 Java</span>
-          <span>🤖 Android</span>
-          <span>🍎 iOS</span>
+            <span>🤖 Android</span>
+            <span>🍎 iOS</span>
 
         </div>
 
-
-        <a
-          href="https://github.com/Nourhanmohamed12"
-          target="_blank"
-          class="btn"
-        >
+        <a href="https://github.com/Nourhanmohamed12" target="_blank" class="btn">
           View Code
         </a>
-
       </div>
-
     </div>
-
 
   </div>
-
-
-  <!-- GitHub -->
 
   <div class="github-link">
-
-    <a
-      href="https://github.com/Nourhanmohamed12"
-      target="_blank"
-    >
-
-      <img
-        src="https://cdn-icons-png.flaticon.com/512/25/25231.png"
-        alt="GitHub"
-      >
-
-      View more projects on GitHub
-
-    </a>
-
-  </div>
-
+  <a href="https://github.com/Nourhanmohamed12" target="_blank">
+    <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub">
+    View more projects on GitHub
+  </a>
+</div>
 </section>
 
-
-
-<!-- ============================================================
-     CONTACT SECTION
-     ============================================================ -->
-
+<!-- Contact Section -->
 <section class="contact section" id="contact">
-
-  <h2 class="section-title">
-    Contacts
-  </h2>
-
+  <h2 class="section-title">Contacts</h2>
 
   <div class="socials">
-
-    <a
-      href="https://www.linkedin.com/in/nour-mohammed-614753278"
-      target="_blank"
-    >
-      LinkedIn
-    </a>
-
-
-    <a
-      href="mailto:nourhanmohammed1282003@gmail.com"
-    >
-      Email
-    </a>
-
-
-    <a
-      href="https://github.com/Nourhanmohamed12"
-      target="_blank"
-    >
-      GitHub
-    </a>
-
+    <a href="https://www.linkedin.com/in/nour-mohammed-614753278?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BgusIlUYPQgm3rlsbdNnzMg%3D%3D" target="_blank">LinkedIn</a>
+    <a href="mailto:nourhanmohammed1282003@gmail.com">Email</a>
+    <a href="https://github.com/Nourhanmohamed12" target="_blank">GitHub</a>
   </div>
 
-
-  <p class="footer-name">
-    Nourhan Mohammed
-  </p>
-
+  <p class="footer-name">Nourhan Mohammed</p>
 </section>
-
-
-
-<!-- JavaScript -->
-
 <script src="script.js"></script>
-
 </body>
-
 </html>
