@@ -386,7 +386,7 @@ section[id] { scroll-margin-top: 70px; }
 
 /* ---------- Skills (from skills.css) ---------- */
 .skills-section {
-  background: linear-gradient(135deg, #020617, #020617, #0a0f2c, #0f172a);
+  background: #1e293b
   color:#e2e8f0;
   padding-bottom: 80px;
 }
