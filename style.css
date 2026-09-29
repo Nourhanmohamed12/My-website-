@@ -472,7 +472,7 @@ section[id] { scroll-margin-top: 70px; }
 .projects .title {
   text-align: center;
   font-size: 36px;
-  color: #e2e8f0;
+  color: #1f2a44;
   margin: 0 0 10px;
 }
 
@@ -490,7 +490,7 @@ section[id] { scroll-margin-top: 70px; }
 }
 
 .projects .card {
-  background: linear-gradient(135deg, #020617, #020617, #0a0f2c, #0f172a);;
+  background: #fff;
   border-radius: 20px;
   overflow: hidden;
   height: 420px;
@@ -516,7 +516,7 @@ section[id] { scroll-margin-top: 70px; }
 
 .tags { display: flex; flex-wrap: wrap; gap: 6px; }
 .tags span {
-  background: #1e293b;
+  background: #0c0a54;
   color: #fff;
   padding: 6px 12px;
   border-radius: 20px;
@@ -526,7 +526,7 @@ section[id] { scroll-margin-top: 70px; }
 .projects .card .btn {
   text-decoration: none;
   text-align: center;
-  background: linear-gradient(135deg, #020617, #020617, #0a0f2c, #0f172a);;
+  background: #0c0a54;
   color: #fff;
   padding: 10px;
   border-radius: 20px;
@@ -537,7 +537,7 @@ section[id] { scroll-margin-top: 70px; }
   display: block;
 }
 .projects .card .btn:hover {
-  background: #1e293b;
+  background: #120f82;
   transform: none;
   box-shadow: none;
 }
@@ -576,6 +576,8 @@ section[id] { scroll-margin-top: 70px; }
   .cards-container { grid-template-columns: 1fr; }
   .socials { flex-wrap: wrap; }
 }
+
+
 /* ---------- Profile photo (hero) ---------- */
 .hero {
   height: auto;
