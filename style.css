@@ -490,7 +490,7 @@ section[id] { scroll-margin-top: 70px; }
 }
 
 .projects .card {
-  background: #fff;
+  background: #1e293b;
   border-radius: 20px;
   overflow: hidden;
   height: 420px;
@@ -511,12 +511,12 @@ section[id] { scroll-margin-top: 70px; }
   flex-direction: column;
   justify-content: space-between;
 }
-.card-body h3 { margin: 0; font-weight: bold; color: #000; }
+.card-body h3 { margin: 0; font-weight: bold; color: #555; }
 .card-body p { font-size: 14px; color: #555; }
 
 .tags { display: flex; flex-wrap: wrap; gap: 6px; }
 .tags span {
-  background: #0c0a54;
+  background: #1e293b;
   color: #fff;
   padding: 6px 12px;
   border-radius: 20px;
@@ -526,7 +526,7 @@ section[id] { scroll-margin-top: 70px; }
 .projects .card .btn {
   text-decoration: none;
   text-align: center;
-  background: #0c0a54;
+  background: #1e293b;
   color: #fff;
   padding: 10px;
   border-radius: 20px;
@@ -552,7 +552,7 @@ section[id] { scroll-margin-top: 70px; }
   align-items: center;
   gap: 8px;
   padding: 8px 16px;
-  background: #0c0a54;
+  background:#1e293b;
   color: #fff;
   text-decoration: none;
   border-radius: 20px;
