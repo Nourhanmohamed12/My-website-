@@ -386,7 +386,7 @@ section[id] { scroll-margin-top: 70px; }
 
 /* ---------- Skills (from skills.css) ---------- */
 .skills-section {
-  background: #1e293b
+  background: #1e293b;
   color:#e2e8f0;
   padding-bottom: 80px;
 }
@@ -620,3 +620,90 @@ section[id] { scroll-margin-top: 70px; }
 @media (max-width: 900px) {
   .profile-photo { width: 140px; height: 140px; }
 }
+
+
+/* ============================================================
+   ANIMATED BACKGROUND + MATCHING SKILLS / PROJECTS
+   ============================================================ */
+#bg-canvas {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  pointer-events: none;
+}
+
+/* let the animated background show through every section */
+.skills-section,
+.projects { background: transparent; }
+.skills-section { padding-top: 90px; }
+
+/* ---------- Skills cards ---------- */
+.skill-card:nth-child(n) {
+  background: rgba(30, 41, 59, 0.75);
+  border: 1px solid rgba(56, 189, 248, 0.18);
+  border-top: 4px solid #38bdf8;
+  backdrop-filter: blur(6px);
+}
+.skill-card:hover { box-shadow: 0 0 28px rgba(56, 189, 248, 0.4); }
+.card-middle i { color: #38bdf8; }
+.tool { background: rgba(56, 189, 248, 0.15); color: #e2e8f0; }
+.tool:hover { background: rgba(56, 189, 248, 0.32); }
+.tool::after { color: #38bdf8; }
+
+/* ---------- Projects ---------- */
+.projects, .projects * { font-family: 'Poppins', sans-serif; }
+.projects .subtitle { color: #94a3b8; margin-bottom: 40px; }
+
+.projects .card {
+  height: auto;
+  min-height: 430px;
+  background: rgba(30, 41, 59, 0.75);
+  border: 1px solid rgba(56, 189, 248, 0.18);
+  backdrop-filter: blur(6px);
+  transition: 0.3s;
+}
+.projects .card:hover {
+  transform: translateY(-10px);
+  border-color: #38bdf8;
+  box-shadow: 0 0 28px rgba(56, 189, 248, 0.35);
+}
+.card-img { height: 160px; flex: none; position: relative; }
+.card-img::after {            /* fade the image into the card */
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, transparent 50%, rgba(30, 41, 59, 0.9));
+}
+.card-body { height: auto; flex: 1; gap: 12px; }
+.card-body h3 { color: #ffffff; font-size: 1.15rem; }
+.card-body p { color: #cbd5e1; }
+
+.tags span {
+  background: rgba(56, 189, 248, 0.12);
+  border: 1px solid rgba(56, 189, 248, 0.35);
+  color: #e2e8f0;
+}
+
+.projects .card .btn {
+  background: transparent;
+  border: 1.5px solid #38bdf8;
+  color: #38bdf8;
+  transition: 0.3s;
+}
+.projects .card .btn:hover {
+  background: #38bdf8;
+  color: #0f172a;
+}
+
+.github-link a {
+  background: rgba(30, 41, 59, 0.75);
+  border: 1px solid rgba(56, 189, 248, 0.4);
+}
+.github-link a:hover { background: #38bdf8; color: #0f172a; }
+
+/* center the section titles like the rest of the site */
+.skills-section, .projects { text-align: center; }
+.skills-section .section-title, .projects .section-title { color: #fff; }
+.projects .card { text-align: left; }
